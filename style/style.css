@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-weight: 500;
+}
+
+/* la styles de css header commence ici. */
+header{
+    width: 100%;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+}
+header .img_academic{
+    width: 50px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav .auth_buttons button{
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+header nav .auth_buttons button a{
+    font-size: 16px;
+    text-decoration: none;
+
+}
+header nav .auth_buttons .signup{
+    color: #454584;
+    background-color: #ccc;
+}
+header nav .auth_buttons .signup:hover{
+    color: #32327f;
+    background-color: #b4b4b4;
+}
+header nav .auth_buttons .login a{
+    color: #ccc;
+}
+header nav .auth_buttons .login{
+    background-color: #454584;
+}
+header nav .auth_buttons .login:hover{
+    background-color: #252569;
+    color: #ccc;
+}
+
+header nav ul{
+   list-style: none;
+   display: flex;
+   align-items: center;
+}
+
+header nav ul li{
+    margin-right: 15px;
+}
+
+header nav ul li a{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* la styles de css footer finis ici. */
+
+/* --------------------------------------------------------------------- */
+
+
+/* la styles de css section page home commence ici. */
+
+.section_class{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+}
+section .container .premier_content .img_academic{
+    width: 120px;
+}
+section .container .premier_content .title{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+section .container form{ 
+    width: 500px;
+    padding: 20px 10px;
+    text-align: left;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+section .container form .form_titre{
+    font-weight: 500;
+    text-align: center;
+}
+
+section .container form .input_form{
+    margin: 10px 0;
+}
+.container form .input_form label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.container form .input_form input,
+.input_form textarea{
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 2px;
+}
+
+.container form .input_form input[type="text"],
+[type="number"],[type="email"],[type="password"]{
+    padding: 5px;
+    width: 100%;
+}
+
+.container form .input_form input[type="checkbox"]{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.container form .input_form select{
+    width: 100%;
+    font-size: 16px;
+}
+
+.container form .input_form textarea{
+    width: 100%;
+    padding: 5px;
+    height: 70px;
+    resize: vertical;
+}
+
+.container form .form_button button{
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form .form_button .envoiyer{
+    background-color: #454584;
+    color: white;
+}
+
+/* la styles de css section page home finis ici. */
+
+/* --------------------------------------------------------------------- */
+
+
+/* la styles de css section page feedbacks commence ici. */
+.feedback_section{
+    width: 100%;
+    padding: 5px 50px;
+    height: 80vh;
+}
+.feedback_section .contents_table{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 25px 30px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.contents_table .wrapper_information{
+    margin-top: 15px;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    width: 100%;
+}
+.wrapper_information td,
+.wrapper_information th{
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+.wrapper_information tr a{
+    padding: 2px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #000;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+}
+.wrapper_information tr .edit{
+    color: #175a17;
+    background-color: #b4ddb4;
+    border: 1px solid #054705 ;
+}
+.wrapper_information tr .delet{
+    color: #722a2a;
+    background-color: #d69f9f;
+    border: 1px solid #722a2a;
+}
+.wrapper_information tr{
+    transition: all 0.3s ease-in-out;
+}
+.wrapper_information tr td:nth-child(1):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.wrapper_information tr:nth-child(even){
+    background-color:  #ddd;
+}
+.wrapper_information tr:hover{
+    background-color: #ccc;
+}
+.wrapper_information th{
+    letter-spacing: -1px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #585894;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.vide_alerte{
+    font-size: 18px;
+    color: #722a2a;
+    padding: 5px;
+    background-color: #d69f9f;
+    border-radius: 3px;
+}
+
+
+
+/* la styles de css section page feedbacks commence ici. */
+
+
+/* --------------------------------------------------------------------- */
+
+/* la styles de css footer commence ici. */
+.footer_speciaux{
+    position: fixed;
+    bottom: 0;
+}
+footer,.footer_speciaux{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+footer .footer-gauche{
+     display: flex;
+     align-items: center;
+}
+footer .footer-gauche img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* la styles de css footer finis ici. */
+/* --------------------------------------------------------------------- */
